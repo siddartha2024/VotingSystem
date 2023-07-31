@@ -1,0 +1,10 @@
+TRS::Car
+TDP::Cycle
+INC::Hand
+BJP::Lotus
+CPI::Corn and Sickle
+CPM::Hammer,Sickle and Star
+YSR::Fan
+JSP::Tumbler
+AAP::Broom
+NOTA::None Of The Above
