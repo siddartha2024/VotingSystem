@@ -23,7 +23,7 @@ public class Voter {
     }
     public String aadharNo()
     {
-    	return phoneNo;
+    	return aadharNo;
     }
     public void castMyVote(String contenderName) throws IOException {
         int index = 0;
