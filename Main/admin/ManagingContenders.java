@@ -35,14 +35,14 @@ public class ManagingContenders {
     public static void displayContenders() {
         System.out.println("  Contender          Symbol\n");
         for (Contender contender : contenderList) {
-            System.out.println("    " + contender.name + "             " + contender.symbol);
+            System.out.println("    " + contender.name() + "             " + contender.symbol());
         }
     }
     public static void disqualify(String name){
         int index=0;
         try {
             for (Contender contender : contenderList) {
-                if (contender.name.equals(name)) {
+                if (contender.name().equals(name)) {
                     contenderList.remove(contenderList.get(index));
                     return;
                 }
