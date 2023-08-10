@@ -11,11 +11,6 @@ public class Main {
     static boolean isNominationsDone = false;
     static boolean isRegistrationsDone = false;
     public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    //voter validation
-    //cites
-    //switchss 
-    //bar graph
-    //src\\admin\\doneVoting.txt
     public static File doneVoting = new File("src\\admin\\doneVoting.txt");
     public static FileWriter listOfAlreadyVoted;
 
