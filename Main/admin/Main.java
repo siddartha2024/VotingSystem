@@ -164,8 +164,8 @@ public class Main {
     static int isValidVoter(String myName, String myAadharNo) throws IOException {
         try {
             for (int i = 0; i < ManagingVoters.voterList.size(); i++) {
-                if (ManagingVoters.voterList.get(i).name.equals(myName) &&
-                        ManagingVoters.voterList.get(i).aadharNo.equals((myAadharNo))) {
+                if (ManagingVoters.voterList.get(i).name().equals(myName) &&
+                        ManagingVoters.voterList.get(i).aadharNo().equals((myAadharNo))) {
                     return i;
                 }
             }
