@@ -11,6 +11,11 @@ public class Main {
     static boolean isNominationsDone = false;
     static boolean isRegistrationsDone = false;
     public static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    //voter validation
+    //cites
+    //switchss 
+    //bar graph
+    //src\\admin\\doneVoting.txt
     public static File doneVoting = new File("src\\admin\\doneVoting.txt");
     public static FileWriter listOfAlreadyVoted;
 
@@ -120,7 +125,7 @@ public class Main {
     static void results() {
         System.out.println("Total participated : " + totalParticipated);
         for (Contender c : ManagingContenders.contenderList) {
-            System.out.println(c.name + " has : " + c.myScore);
+            System.out.println(c.name() + " has : " + c.myScore());
         }
     }
 
