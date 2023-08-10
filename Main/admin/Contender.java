@@ -1,10 +1,11 @@
 package admin;
 
 public class Contender {
-    public String name;
-    public String symbol;
-    public int myScore = 0;
+    private String name;
+    private String symbol;
+    private int myScore = 0;
 
+    //boolean isEligible;
     public Contender(String name, String symbol) {
         this.name = name;
         this.symbol = symbol;
@@ -18,10 +19,14 @@ public class Contender {
     {
     	return symbol;
     }
+    public int myScore()
+    {
+    	return myScore;
+    }
 
     public void castForMe() {
         Main.totalParticipated++;
-        
+        //if(!isEligible) throw new Disqualified();
         myScore++;
     }
 }
