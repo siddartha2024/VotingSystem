@@ -4,11 +4,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Voter {
-    public String name;
-    public String email;
-    public String phoneNo;
-    public String aadharNo;
-    public String age;
+    private String name;
+    private String email;
+    private String phoneNo;
+    private String aadharNo;
+    private String age;
 
     public Voter(String name, String age, String email, String phoneNo, String addharNo) {
         this.name = name;
@@ -17,7 +17,14 @@ public class Voter {
         this.phoneNo = phoneNo;
         this.aadharNo = addharNo;
     }
-
+    public String name()
+    {
+    	return name;
+    }
+    public String aadharNo()
+    {
+    	return phoneNo;
+    }
     public void castMyVote(String contenderName) throws IOException {
         int index = 0;
         Main.listOfAlreadyVoted = new FileWriter(Main.doneVoting,true);
