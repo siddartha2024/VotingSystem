@@ -29,7 +29,7 @@ public class Voter {
         int index = 0;
         Main.listOfAlreadyVoted = new FileWriter(Main.doneVoting,true);
         for (Contender c : ManagingContenders.contenderList) {
-            if (contenderName.equals(c.name)) {
+            if (contenderName.equals(c.name())) {
                 break;
             }
             index++;
